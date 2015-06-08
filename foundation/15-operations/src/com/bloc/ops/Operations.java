@@ -11,21 +11,21 @@ public class Operations extends Object {
 		/************************************************/
 
 		int x;	
-
+        x = 18;
 		/************************************************
 		 *  ASSIGNMENT:
 		 *	Pre-increment x and assign it to y in a single statement
 		/************************************************/
 
 		int y;
-
+        int y = --x;
 		/************************************************
 		 *	ASSIGNMENT:
 		 *	Multiply x by y, assign it to z
 		/************************************************/
 
 		int z;
-
+        int example = x * y = z;
 		/************************************************
 		 *	ASSIGNMENT:
 		 *	Mod z by 17 and assign the result to remainder
