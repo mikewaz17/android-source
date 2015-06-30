@@ -8,3 +8,16 @@ package com.bloc.inherit;
  *	After growing to a "large" size, they may grow
  *	to an additional, "huge" size after 3 meals.
 /************************************************/
+class GreatDane extends Dog {
+	void changeSize(boolean grow) {
+		int sizeIndex = getSizeIndex();
+		sizeIndex = sizeIndex + (grow ? 1 : -1);
+		if (sizeIndex > 4) {
+			sizeIndex = 4;
+		} else if (sizeIndex < 0) {
+			sizeIndex = 0;
+		}
+		setSize(fromSizeIndex(sizeIndex));
+	}
+		
+	}

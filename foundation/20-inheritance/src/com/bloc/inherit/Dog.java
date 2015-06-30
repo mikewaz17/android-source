@@ -30,7 +30,7 @@ abstract class Dog {
 	int mFeedCounter;
 	// Tracks how many times the dog has played
 	int mPlayCounter;
-
+    String mChangeSize;
 	/* Abstract Methods */
 
 	/*
@@ -236,6 +236,8 @@ abstract class Dog {
 			return 2;
 		} else if( "large".equals(size) ) {
 			return 3;
+	    } else if( "huge".equals(size) ){
+			return 4;
 		} else {
 			return 2;
 		}
@@ -251,7 +253,8 @@ abstract class Dog {
 			case 0: return "tiny";
 			case 1: return "small";
 			case 2: return "average";
-			case 3:
+			case 3: return "large";
+			case 4: return "huge";
 			default: return "large";
 		}
 	}

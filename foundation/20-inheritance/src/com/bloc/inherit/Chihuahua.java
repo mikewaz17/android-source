@@ -7,3 +7,12 @@ package com.bloc.inherit;
  *	Chiuahuas must be fed 5 times in order to grow
  *	larger.
 /************************************************/
+class Chihuahua extends Dog {
+	public void feed(){
+		mFeedCounter++;
+		mWeight += WEIGHT_GAINED_FROM_FEEDING;
+		if (mFeedCounter % 5 == 0){
+			changeSize(true);
+		}   
+	}
+}
