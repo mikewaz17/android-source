@@ -32,12 +32,11 @@ public class Methods extends Object {
 	 * @return the logical opposite of the original
 	 */
 	public boolean giveMeTheOpposite(boolean original) {
-		/************************************************
-		 * Your work goes here
-		 ************************************************/
+		
+		 
 
 		// You are free to modify the return statement
-		return false;
+		return !original;
 	}
 
 	/*
@@ -57,9 +56,9 @@ public class Methods extends Object {
 	 * @return nothing
 	 */
 	public void flipTheSign(int[] numbers) {
-		/************************************************
-		 * Your work goes here
-		 ************************************************/
+		for (int i = 0; i<numbers.length; i++) {
+		    numbers [i] = -1 * numbers [i]; 
+		}
 	}
 
 
@@ -87,12 +86,21 @@ public class Methods extends Object {
 	 * @return an array of booleans
 	 */
 	public boolean[] boolsRule(int floor, int[] someNumbers) {
-		/************************************************
-		 * Your work goes here
-		 ************************************************/
-
+		boolean [] bools = new boolean [someNumbers.length];
+		for (int i = 0; i<someNumbers.length; i++) {
+		    int compareNum = someNumbers [i]; 
+            if (compareNum>= floor)	 {
+				
+				bools [i] = true;
+				
+			}
+			else {
+				bools [i] = false;
+			}
+				
+		}
 		// You are free to modify the return statement
-		return new boolean [0];
+		return bools; 
 	}
 
 	/*
@@ -114,9 +122,7 @@ public class Methods extends Object {
 	 * @return an array of length 2: {min, max}
 	 */
 	public int[] getMinAndMax(int[] someNumbers) {
-		/************************************************
-		 * Your work goes here
-		 ************************************************/
+		
 
 		// You are free to modify the return statement
 		return new int[2];
