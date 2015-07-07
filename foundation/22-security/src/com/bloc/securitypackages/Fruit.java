@@ -14,24 +14,24 @@ public abstract class Fruit extends Object {
 	// Weight of the fruit, in pounds
 	private double mWeight;
 
-	Fruit() {
+	public Fruit() {
 		this("Apple");
 		// Default fruit
 	}
 
-	Fruit(String name) {
+	public Fruit(String name) {
 		this(name, 0);
 	}
 
-	Fruit(String name, int calories) {
+	public Fruit(String name, int calories) {
 		this(name, calories, null);
 	}
 
-	Fruit(String name, int calories, Color color) {
+	public Fruit(String name, int calories, Color color) {
 		this(name, calories, color, 0d);
 	}
 
-	Fruit(String name, int calories, Color color, double weight) {
+	public Fruit(String name, int calories, Color color, double weight) {
 		this.mName = name;
 		this.mCalories = calories;
 		this.mColor = color;
@@ -54,7 +54,7 @@ public abstract class Fruit extends Object {
 		mCalories = calories;
 	}
 
-	private Color getColor() {
+	public Color getColor() {
 		return mColor;
 	}
 
@@ -62,11 +62,11 @@ public abstract class Fruit extends Object {
 		mColor = color;
 	}
 
-	double getWeight() {
+	public double getWeight() {
 		return mWeight;
 	}
 
-	private void setWeight(double weight) {
+	public void setWeight(double weight) {
 		mWeight = weight;
 	}
 }

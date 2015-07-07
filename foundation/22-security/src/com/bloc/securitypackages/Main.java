@@ -4,8 +4,11 @@ package com.bloc.securitypackages;
  *	ASSIGNMENT:
  *	Import the appopriate classes/packages below
 /************************************************/
+import com.bloc.securitypackages.apples.Macintosh;
+import com.bloc.securitypackages.citrus.Grapefruit;
+import com.bloc.securitypackages.colors.Orange;
+import com.bloc.securitypackages.apples.Green;
 
-// e.g. import com.bloc.{your_package};
 
 /************************************************
  *	DO NOT MODIFY BELOW THIS BLOCK
