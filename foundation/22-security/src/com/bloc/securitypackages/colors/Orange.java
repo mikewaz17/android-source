@@ -4,7 +4,7 @@ package com.bloc.securitypackages.colors;
  *	YOU MAY MODIFY THIS FILE AND/OR ITS LOCATION
 /************************************************/
 
-class Orange extends Color {
+class Orange extends Object {
 	Orange() {
 		super(Orange.class.getSimpleName(), 255, 165, 0);
 	}
