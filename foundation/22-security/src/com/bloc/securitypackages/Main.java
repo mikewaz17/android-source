@@ -6,9 +6,8 @@ package com.bloc.securitypackages;
 /************************************************/
 import com.bloc.securitypackages.apples.Macintosh;
 import com.bloc.securitypackages.citrus.Grapefruit;
-import com.bloc.securitypackages.colors.Orange;
 import com.bloc.securitypackages.apples.Green;
-
+import com.bloc.securitypackages.colors.Orange;
 
 /************************************************
  *	DO NOT MODIFY BELOW THIS BLOCK
@@ -20,7 +19,7 @@ public class Main extends Object {
 		Fruit[] fruits = new Fruit[4];
 		fruits[0] = new Macintosh();
 		fruits[1] = new Green();
-		fruits[2] = new Orange();
+		fruits[2] = new com.bloc.securitypackages.citrus.Orange();
 		fruits[3] = new Grapefruit();
 
 		Color[] colors = new Color[5];
