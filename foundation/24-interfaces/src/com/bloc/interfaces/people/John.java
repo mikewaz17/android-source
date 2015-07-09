@@ -9,4 +9,16 @@ public class John extends Person {
 	public John() {
 		super("John", "Smith", "Male", 1.7d, 69d, "Brown");
 	}
+	
+	public void getInCar(){
+		
+	}
+	
+	public void startEngine(){
+		
+	}
+	
+	public void driveFast(){
+		
+	}
 }
