@@ -18,35 +18,89 @@ public class Main extends Object {
 		/************************************************/
 		
 		public class Dog implements Pet {
-		@Override
-		public void feed() {
+			@Override
+			public void feed() {
+			mFed = true;
+			}
 		
-		}
+			@Override
+			public void wash(){
+				
+			}
 		
-		@Override
-		public void wash();
-		
-		@Override
-		public void exercise(){
+			@Override
+			public void exercise(){
 			
+			}
 		}
-	}
 
-		cat.feed();
-		cat.wash();
-		cat.exercise();
+		public class Cat implements Pet{
+			@Override
+			public void feed(){
+			
+			}
+			
+			@Override
+			public void wash(){
+				
+			}
+			
+			@Override
+			public void exercise(){
+				
+			}
+		}
 		
-		bird.feed();
-		bird.wash();
-		bird.exercise();
-
-		snake.feed();
-		snake.wash();
-		snake.exercise();
-
-		tarantula.feed();
-		tarantula.wash();
-		tarantula.exercise();
+		public class Bird implements Pet {
+			@Override
+			public void feed(){
+				
+			}
+			
+			@Override
+			public void wash(){
+				
+			}
+			
+			@Override
+			public void exercise(){
+				
+			}
+		}
+		
+		public class snake implements Pet {
+			@Override
+			public void feed(){
+				
+			}
+			
+			@Override
+			public void wash(){
+				
+			}
+			
+			@Override
+			public void exercise(){
+				
+			}
+		}
+		
+		public class tarantula implements Pet {
+			@Override
+			public void feed(){
+				
+			}
+			
+			@Override
+			public void wash(){
+				
+			}
+			
+			@Override
+			public void exercise(){
+				
+			}
+		}
 
 		/************************************************
 	 	 *	ASSIGNMENT:
