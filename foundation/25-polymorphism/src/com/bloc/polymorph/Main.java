@@ -17,10 +17,18 @@ public class Main extends Object {
 	 	 *	Replace the operations below by employing polymorphism
 		/************************************************/
 		
-		public class Dog extends Pet {
-	
+		public class Dog implements Pet {
+		@Override
 		public void feed() {
 		
+		}
+		
+		@Override
+		public void wash();
+		
+		@Override
+		public void exercise(){
+			
 		}
 	}
 
