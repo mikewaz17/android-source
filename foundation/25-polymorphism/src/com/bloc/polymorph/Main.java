@@ -20,7 +20,7 @@ public class Main extends Object {
 		public class Dog implements Pet {
 			@Override
 			public void feed() {
-			mFed = true;
+			
 			}
 		
 			@Override
