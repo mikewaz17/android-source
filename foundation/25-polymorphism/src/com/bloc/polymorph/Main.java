@@ -16,15 +16,18 @@ public class Main extends Object {
 	 	 *	ASSIGNMENT:
 	 	 *	Replace the operations below by employing polymorphism
 		/************************************************/
-
-		dog.feed();
-		dog.wash();
-		dog.exercise();
+		
+		public class Dog extends Pet {
+	
+		public void feed() {
+		
+		}
+	}
 
 		cat.feed();
 		cat.wash();
 		cat.exercise();
-
+		
 		bird.feed();
 		bird.wash();
 		bird.exercise();
