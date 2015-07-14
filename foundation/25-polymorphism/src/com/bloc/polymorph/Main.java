@@ -5,7 +5,7 @@ import com.bloc.polymorph.pets.*;
 public class Main extends Object {
 
 	public static void main(String [] args) {
-
+        
 		Dog dog = new Dog();
 		Cat cat = new Cat();
 		Bird bird = new Bird();
@@ -17,90 +17,24 @@ public class Main extends Object {
 	 	 *	Replace the operations below by employing polymorphism
 		/************************************************/
 		
-		public class Dog implements Pet {
-			@Override
-			public void feed() {
-			
-			}
+		Pet[] pets = new Pet[5];
+		pets[0] = dog;
+		pets[1] = cat;
+		pets[2] = bird;
+		pets[3] = snake;
+		pets[4] = tarantula;
 		
-			@Override
-			public void wash(){
-				
-			}
-		
-			@Override
-			public void exercise(){
-			
-			}
-		}
-
-		public class Cat implements Pet{
-			@Override
-			public void feed(){
-			
-			}
-			
-			@Override
-			public void wash(){
-				
-			}
-			
-			@Override
-			public void exercise(){
-				
-			}
+		for (int i = 0; i < pets.length; i++){
+			pets[i].feed();
+			pets[i].wash();
+			pets[i].exercise();
 		}
 		
-		public class Bird implements Pet {
-			@Override
-			public void feed(){
-				
-			}
-			
-			@Override
-			public void wash(){
-				
-			}
-			
-			@Override
-			public void exercise(){
-				
-			}
-		}
 		
-		public class snake implements Pet {
-			@Override
-			public void feed(){
-				
-			}
 			
-			@Override
-			public void wash(){
-				
-			}
-			
-			@Override
-			public void exercise(){
-				
-			}
-		}
 		
-		public class tarantula implements Pet {
-			@Override
-			public void feed(){
-				
-			}
-			
-			@Override
-			public void wash(){
-				
-			}
-			
-			@Override
-			public void exercise(){
-				
-			}
-		}
+		
+		
 
 		/************************************************
 	 	 *	ASSIGNMENT:
