@@ -8,11 +8,14 @@ public class Main extends Object {
 
 		ToyBox toyBox = new ToyBox();
 		
-		/************************************************
- 		 *	ASSIGNMENT:
- 		 *	Place several Toy objects into toyBox
-		/************************************************/
-
+		ToyBox.add(new Thing("Spoon"));
+		ToyBox.add(new Thing("Book"));
+		ToyBox.add(new Thing("Action Figure"));
+		ToyBox.add(new Thing("Thing"));
+		
+		
+		
+		
 		assert toyBox.getToyCount() > 0 : "Let's get some toys in that box!";
 		System.out.println("Inside your toybox you've got:");
 		for (int i = 0; i < toyBox.getToyCount(); i++) {
