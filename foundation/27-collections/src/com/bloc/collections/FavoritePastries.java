@@ -19,18 +19,14 @@ import java.util.*;
  */
 public class FavoritePastries {
 
+	private HashMap <FavoritePastries, String> mRatingsMap;
+	
+	
 	/************************************************
  	 *	ASSIGNMENT:
 	 *	Use a HashMap to store the relationship
 	 *	between rating and pastry: HashMap<Integer, List<Pastry>>
 	/************************************************/
-
-
-	public FavoritePastries() {
-		/************************************************
- 	 	 *	WORK HERE
-		/************************************************/
-	}
 
 	/* 
 	 * addPastry
@@ -47,10 +43,14 @@ public class FavoritePastries {
 	 * @param rating The rating to associate with it
 	 * @return nothing
 	 */
-	public void addPastry(Pastry pastry, int rating) {
-		/************************************************
- 	 	 *	WORK HERE
-		/************************************************/
+	 
+	 public void FavoritePastries() {
+		
+		Pastry[] pastries = new Pastry[7];
+		pastries[0] = new Pastry("Cronut");
+		mRatingsMap = new HashMap<FavoritePastries, String>();
+		mRatingsMap.put(Cronut, "int = 5");
+	
 	}
 
 	/* 
@@ -66,10 +66,10 @@ public class FavoritePastries {
 	 *		   false otherwise
 	 */
 	public boolean removePastry(Pastry pastry) {
-		/************************************************
- 	 	 *	WORK HERE, you must modify the return value
-		/************************************************/
-		return false;
+	    
+		removePastry(Pastry (pastry) int ratings = 5);
+		mRatingsMap.remove(Cronut);
+			return true;
 	}
 
 	/* 
@@ -87,10 +87,11 @@ public class FavoritePastries {
 	 *		   -1 if not found among FavoritePastries
 	 */
 	public int getRatingForPastry(Pastry pastry) {
-		/************************************************
- 	 	 *	WORK HERE, you must modify the return value
-		/************************************************/
-		return -1;
+		
+		int pastryRating = -1;
+			for (int i = -1; i < pastries.length; i++) {
+			pastryRating = favoritePastries.getRatingForPastry(pastries[i]);
+				return -1;
 	}
 
 	/* 
@@ -110,9 +111,7 @@ public class FavoritePastries {
 	 *         found
 	 */
 	public Collection<Pastry> getPastriesForRating(int rating) {
-		/************************************************
- 	 	 *	WORK HERE, you must modify the return value
-		/************************************************/
+		
 		return null;
 	}
 
