@@ -67,7 +67,7 @@ public class FavoritePastries {
 	 */
 	public boolean removePastry(Pastry pastry) {
 	    
-		removePastry(Pastry (pastry) int ratings = 5);
+		removePastry(Pastry (pastry) int ratings = (5);
 		mRatingsMap.remove(Cronut);
 			return true;
 	}
