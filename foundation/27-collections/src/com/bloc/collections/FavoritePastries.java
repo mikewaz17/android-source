@@ -89,9 +89,9 @@ public class FavoritePastries {
 	public int getRatingForPastry(Pastry pastry) {
 		
 		int pastryRating = -1;
-			for (int i = -1; i < pastries.length; i++) {
+		for (int i = -1; i < pastries.length; i++) {
 			pastryRating = favoritePastries.getRatingForPastry(pastries[i]);
-				return -1;
+			return -1;
 	}
 
 	/* 
