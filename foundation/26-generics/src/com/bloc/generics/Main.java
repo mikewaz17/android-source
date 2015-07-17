@@ -8,7 +8,7 @@ public class Main extends Object {
 
 		ToyBox toyBox = new ToyBox();
 		
-		toyBox.add(new Toy<>(new Spoon()));
+		toyBox.addToy(new Toy<>(new Spoon()));
 		
 		
 		
