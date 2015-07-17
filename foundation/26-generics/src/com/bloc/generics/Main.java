@@ -9,6 +9,9 @@ public class Main extends Object {
 		ToyBox toyBox = new ToyBox();
 		
 		toyBox.addToy(new Toy<>(new Spoon()));
+		toyBox.addToy(new Toy<>(new Book()));
+		toyBox.addToy(new Toy<>(new ActionFigure()));
+		
 		
 		
 		
