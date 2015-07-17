@@ -8,10 +8,12 @@ public class Main extends Object {
 
 		ToyBox toyBox = new ToyBox();
 		
-		ToyBox.add(new Thing("Spoon"));
-		ToyBox.add(new Thing("Book"));
-		ToyBox.add(new Thing("Action Figure"));
-		ToyBox.add(new Thing("Thing"));
+		
+		Toy<Spoon> spoon = new Toy(new Spoon());
+		
+		toyBox.add(new Toy<>(new Spoon()));
+		
+		
 		
 		
 		
