@@ -19,7 +19,7 @@ import java.util.*;
  */
 public class FavoritePastries {
 
-	private HashMap <FavoritePastries, String> mRatingsMap;
+	private HashMap <Integer, List<Pastry>> mRatingsMap;
 	
 	
 	/************************************************
@@ -27,7 +27,13 @@ public class FavoritePastries {
 	 *	Use a HashMap to store the relationship
 	 *	between rating and pastry: HashMap<Integer, List<Pastry>>
 	/************************************************/
-
+	public void FavoritePastries() {
+		
+		mRatingsMap = new HashMap<Integer, List<Pastry>>();
+		
+	
+	}
+	
 	/* 
 	 * addPastry
 	 *
@@ -44,13 +50,18 @@ public class FavoritePastries {
 	 * @return nothing
 	 */
 	 
-	 public void FavoritePastries() {
-		
-		Pastry[] pastries = new Pastry[7];
-		pastries[0] = new Pastry("Cronut");
-		mRatingsMap = new HashMap<FavoritePastries, String>();
-		mRatingsMap.put(Cronut, "int = 5");
-	
+	public void addPastry(Pastry pastryToAdd, Integer rating){
+		for (int i = 1; i < 6; i++){
+			List<Pastry> pastries = mRatingsMap.get(i);
+			if (null != pastries){
+				if (pastries.contains(pastryToAdd)){
+					pastries.remove(pastryToAdd);
+				}
+			}
+		}
+		List<Pastry> currentRatingPastries = mRatingsMap.get(rating);
+		currentRatingPastries.add(pastryToAdd);
+		mRatingsMap.put(rating, currentRatingPastries);
 	}
 
 	/* 
@@ -65,10 +76,10 @@ public class FavoritePastries {
 	 * @return true if the Pastry was found and removed,
 	 *		   false otherwise
 	 */
-	public boolean removePastry(Pastry pastry) {
+	public boolean removePastry(Pastry pastrytoRemove) {
 	    
 		removePastry(Pastry (pastry) int ratings = (5);
-		mRatingsMap.remove(Cronut);
+		mRatingsMap.remove(pastrytoRemove);
 			return true;
 	}
 
