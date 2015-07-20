@@ -14,9 +14,12 @@ import java.util.Random;
 public class Main extends Object {
 
 	public static void main(String [] args) {
+		try{
 		tryGetMax();
 		tryRemove();
-
+		} catch(IllegalArgumentException e){
+			
+		}
 		System.out.println("/************************/");
 		System.out.println("/*                      */");
 		System.out.println("/*                      */");
