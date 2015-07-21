@@ -18,7 +18,13 @@ public class Speakerphone extends Object {
 	 *	ASSIGNMENT:
 	 *	Implement the get method
 	/************************************************/
-
+	public static getInstance(){
+		if (sSpeakerphone == null){
+			sSpeakerphone = new Speakerphone();
+		}
+		return sSpeakerphone;
+	}
+	
 	/*
 	 * addListener
 	 *
@@ -31,7 +37,11 @@ public class Speakerphone extends Object {
 	 *	ASSIGNMENT:
 	 *	Implement the addListener method
 	/************************************************/
-
+	public void addListener(Listener listener){
+		mListener.add(listener);
+	}
+	
+	
 	/*
 	 * removeListener
 	 *
@@ -44,7 +54,11 @@ public class Speakerphone extends Object {
 	 *	ASSIGNMENT:
 	 *	Implement the removeListener method
 	/************************************************/
-
+	public void removeListener(Listener listener){
+		mListener.remove(Listener);
+	}
+	
+	
 	/*
 	 * removeAll
 	 *
@@ -56,7 +70,12 @@ public class Speakerphone extends Object {
 	 *	ASSIGNMENT:
 	 *	Implement the removeAll method
 	/************************************************/
-
+	private HashSet<Listener> mListener;
+	public void removeAll(Listener listener){
+		mListener.removeAll(listener);
+	}
+	
+	
 	/*
 	 * contains
 	 *
@@ -71,7 +90,9 @@ public class Speakerphone extends Object {
 	 *	ASSIGNMENT:
 	 *	Implement the contains method
 	/************************************************/	
-
+	
+	
+	
 	/*
 	 * shoutMessage
 	 *
