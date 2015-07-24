@@ -1,5 +1,8 @@
 package com.bloc.singletons;
 
+
+import java.util.HashSet;
+
 /************************************************
  *	ASSIGNMENT:
  *	Populate this class with the defined methods.
@@ -79,8 +82,8 @@ public class Speakerphone extends Object {
 	 *	Implement the removeAll method
 	/************************************************/
 	
-	public void removeAll(Listener listener){
-		mListeners.removeAll(listener);
+	public void removeAll(){
+		mListeners.clear();
 	}
 	
 	
@@ -149,8 +152,11 @@ public class Speakerphone extends Object {
 	 *	ASSIGNMENT:
 	 *	Implement the shoutMessage method
 	/************************************************/
-	public void shoutMessage(Talker talker, Class <T> cls){
+	public void shoutMessage(Talker talker, Class cls){
         for (Listener listener : mListeners){
+			if (cls.isAssignableFrom(listener.getClass())){
+				listener.onMessageReceived(talker.getMessage());
+			}
 			
 		}
 	}
