@@ -4,6 +4,7 @@ import java.net.URL;
 import java.io.*;
 import javax.imageio.*;
 import java.awt.image.BufferedImage;
+import java.net.MalformedURLException;
 
 public class Main extends Object {
 
@@ -15,7 +16,7 @@ public class Main extends Object {
 		 *	Thread, use the ImageGetter class.
 		/************************************************/
 
-		try {
+		/*try {
 			File existingImage = new File("google_logo.png");
 			if (existingImage.exists()) {
 				existingImage.delete();
@@ -36,13 +37,26 @@ public class Main extends Object {
 			e.printStackTrace();
 			System.exit(1);
 		}
-
+		*/
+		URL url = null;
+		
+		try {
+			 url = new URL("https://www.google.com/images/srpr/logo11w.png");
+	
+		}
+		catch (MalformedURLException e) {
+			e.printStackTrace();
+			System.exit(1);
+		}
+	    ImageGetter imageGetter = new ImageGetter(url, false);
+		
+		
 		/************************************************
 		 *	ASSIGNMENT:
 		 *	Perform the previous block of code on a separate
 		 *	Thread, use the ImageGetter class.
 		/************************************************/
-
+	
 		File logo = new File("google_logo.png");
 		boolean exists = false;
 		try {
